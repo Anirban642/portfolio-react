@@ -103,3 +103,9 @@
         width: 25px;
     }
 }
+
+@media (max-width: 500px) {
+    .mywork-container{
+        grid-template-columns:1fr;
+    }
+}

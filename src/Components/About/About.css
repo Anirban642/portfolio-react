@@ -54,6 +54,10 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    border: 2px solid #2da24e;
+    border-radius: 10px;
+    padding: 22px;
+    width: 80%;
 }
 
 .about-skill{
@@ -138,6 +142,11 @@
     }
     .about-para{
         line-height: 25px;
+    }
+
+    .about-skills{
+        border: none;
+        width: 85%;
     }
     .about-skill{
         display: flex;

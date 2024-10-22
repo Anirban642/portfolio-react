@@ -155,6 +155,12 @@
     .contact-detail img{
         width: 20px;
     }
+    .contact-right input{
+        width: 95%;
+    }
+    .contact-right textarea{
+        width: 95%;
+    }
     .contact-right label{
         font-size: 14px;
     }
