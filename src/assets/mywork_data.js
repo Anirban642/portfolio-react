@@ -10,7 +10,7 @@ const mywork_data = [
         w_no:1,
         w_name:"Web design",
         w_img:project1_img,
-        w_link:"https://tomato-react.vercel.app/"
+        w_link:"https://food-del-frontend-19e4.onrender.com"
     },
     {
         w_no:2,
