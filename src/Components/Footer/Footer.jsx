@@ -1,33 +1,29 @@
-import React from 'react'
 import './Footer.css'
-import footer_logo from '../../assets/logo.png'
-import user_icon from '../../assets/user_icon.svg'
 
 const Footer = () => {
   return (
     <div className='footer'>
-      <div className="footer-top">
+        <div className="footer-top">
         <div className="footer-top-left">
-            <img src={footer_logo} alt="" />
-            <p>I am currently a Student and Frontend Developer from India working for 2 years and I have completed many projects using React JS.</p>
+          <a className='footer-brand' href='#home' aria-label='Anirban Das home'>
+            <span className='brand-mark' aria-hidden='true'>&lt;/&gt;</span>
+            <span className='brand-name'>Anirban Das</span>
+          </a>
+          <p>Anirban Das - Full Stack Developer Intern building practical web applications.</p>
         </div>
         <div className="footer-top-right">
-            <div className="footer-email-input">
-                <img src={user_icon} alt="" />
-                <input type="email" placeholder='Enter your Email' />
-            </div>
-            <div className="footer-subscribe">Subscribe</div>
+          <a href="mailto:anirbandas64237@gmail.com">Email me <span aria-hidden='true'>↗</span></a>
+          <a href="https://github.com/Anirban642" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden='true'>↗</span></a>
         </div>
       </div>
       <hr />
       <div className="footer-bottom">
         <p className="footer-bottom-left">
-        © 2024 Anirban Das. All rights reserved.
+        © 2026 Anirban Das.
         </p>
         <div className="footer-bottom-right">
-            <p>Term of Services</p>
-            <p>Privacy Policy</p>
-            <p>Connect with me</p>
+          <a href="https://www.linkedin.com/in/anirban64237" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="tel:+917439596392">+91 7439 596 392</a>
         </div>
       </div>
     </div>

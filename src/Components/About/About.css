@@ -3,8 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px;
-    margin: 70px 10%;
+    gap: 48px;
+    max-width: 1180px;
+    margin: 0 auto 120px;
+    padding: 0 32px;
 }
 
 .about-title{
@@ -12,13 +14,13 @@
 }
 
 .about-title h1{
-    padding: 0 30px;
-    font-size: 60px;
+    padding: 0;
+    font-size: 52px;
     font-weight: 600;
 }
 
 .about-title img{
-    width: 160px;
+    width: 120px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -31,9 +33,10 @@
 }
 
 .about-sections img{
-    height: 450px;
-    width: 300px;
-    border-radius: 10px;
+    height: 420px;
+    width: 280px;
+    border-radius: 4px;
+    object-fit: cover;
 }
 
 .about-right{
@@ -46,16 +49,17 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    color: var(--muted);
     font-size: 18px;
-    font-weight: 500;
+    line-height: 28px;
 }
 
 .about-skills{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    border: 2px solid #2da24e;
-    border-radius: 10px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
     padding: 22px;
     width: 80%;
 }
@@ -78,7 +82,7 @@
     border: none;
     height: 8px;
     border-radius: 50px;
-    background: linear-gradient(264deg, #DF8908 -5.09%,#B415FF 106.28%);
+    background: var(--blue);
 }
 
 .about-achievements{
@@ -99,10 +103,11 @@
 .about-achievement h1{
     font-size: 40px;
     font-weight: 700;
-    background: linear-gradient(270deg, #DF8908 50.41%,#B415FF 90.25%);
+    color: var(--blue);
+    background: none;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: currentColor;
 }
 
 .about-achievement p{
@@ -123,7 +128,8 @@
 @media (max-width: 768px) {
     .about{
         gap: 50px;
-        margin: 50px 6%;
+        margin: 0 0 80px;
+        padding: 0 24px;
         align-items: start;
     }
     .about-title h1{
@@ -146,7 +152,7 @@
 
     .about-skills{
         border: none;
-        width: 85%;
+        width: 100%;
     }
     .about-skill{
         display: flex;

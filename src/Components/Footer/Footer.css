@@ -1,8 +1,26 @@
 .footer{
-    margin: 50px 10%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    border-top: 1px solid var(--line);
+}
+
+.footer-brand{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.footer-top-left{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .footer-top{
@@ -13,12 +31,24 @@
 .footer-top-left p{
     font-size: 16px;
     max-width: 450px;
+    color: var(--muted);
 }
 
 .footer-top-right{
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.footer-top-right a,
+.footer-bottom-right a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.footer-top-right a:hover,
+.footer-bottom-right a:hover{
+    color: var(--orange);
 }
 
 .footer-email-input{
@@ -75,7 +105,7 @@
 
 @media (max-width: 768px) {
     .footer{
-        margin: 50px 6%; 
+        padding: 28px 24px;
     }
     .footer-top{
         flex-direction: column;

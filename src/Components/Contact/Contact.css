@@ -4,7 +4,9 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 10%;
+    max-width: 1180px;
+    margin: 0 auto 120px;
+    padding: 0 32px;
 }
 
 .contact-title{
@@ -13,7 +15,7 @@
 
 .contact-title h1{
     padding: 0 30px;
-    font-size: 60px;
+    font-size: 52px;
     font-weight: 600;
 }
 
@@ -41,15 +43,12 @@
 .contact-left h1{
     font-size: 50px;
     font-weight: 700;
-    background: linear-gradient(270deg, #DF8908 80%, #B415FF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--blue);
 }
 
 .contact-left p{
     max-width: 550px;
-    color: #D8D8D8;
+    color: var(--muted);
     font-size: 16px;
     line-height: 25px;
 }
@@ -58,7 +57,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    color: black;
+    color: var(--ink);
     font-size: 22px;
 }
 
@@ -66,6 +65,12 @@
     display: flex;
     align-items: center;
     gap: 18px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-detail:hover p{
+    color: var(--blue);
 }
 
 .contact-detail img{
@@ -81,7 +86,7 @@
 }
 
 .contact-right label{
-    color: #D8D8D8;
+    color: var(--muted);
 }
 
 .contact-right input{
@@ -89,8 +94,9 @@
     width: 100%;
     padding: 18px 0 18px 20px;
     border-radius: 4px;
-    background: #32323c;
-    color: #A0A0A0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    color: var(--ink);
     font-family: Outfit;
     font-size: 18px;
 }
@@ -100,8 +106,9 @@
     width: 100%;
     padding: 18px 0 18px 20px;
     border-radius: 4px;
-    background: #32323c;
-    color: #A0A0A0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    color: var(--ink);
     font-family: Outfit;
     font-size: 18px;
 }
@@ -110,7 +117,7 @@
     border: none;
     color: #fff;
     border-radius: 50px;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    background: var(--blue);
     font-size: 18px;
     padding: 18px 40px;
     margin-top: 15px;
@@ -119,14 +126,33 @@
 }   
 
 .contact-submit:hover{
-    transform: scale(1.1);
+    background: var(--orange);
     transition: 0.3s;
+}
+
+.contact-submit:disabled{
+    cursor: wait;
+    opacity: .65;
+}
+
+.contact-form-message{
+    min-height: 24px;
+    color: var(--muted);
+}
+
+.contact-form-message.success{
+    color: #287a52;
+}
+
+.contact-form-message.error{
+    color: #b14432;
 }
 
 @media (max-width: 768px) {
     .contact{
         gap: 40px;
-        margin: 50px 6%;
+        margin: 0 0 80px;
+        padding: 0 24px;
         align-items: start;
     }
     .contact-title h1{
@@ -145,7 +171,7 @@
     }
     .contact-left p{
         max-width: 550px;
-        color: #d8d8d8;
+        color: var(--muted);
         font-size: 16px;
         line-height: 25px;
     }
