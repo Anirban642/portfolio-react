@@ -1,7 +1,7 @@
 import project1_img from '../assets/project_1.png'
 import project7_img from '../assets/project_7.png'
 import project8_img from '../assets/project_8.png'
-import project9_img from '../assets/project_9.png'
+import project3_img from '../assets/project_3.png'
 
 const mywork_data = [
     {
@@ -14,7 +14,7 @@ const mywork_data = [
             "Voice search",
             "Buyer and supplier workflows"
         ],
-        w_img: project7,
+        w_img: project7_img,
         w_link: "https://textile-marketplace-sigma.vercel.app/",
         w_github: "https://github.com/Anirban642/marketplace-hackathon",
         featured: true
@@ -29,7 +29,7 @@ const mywork_data = [
             "Kanban task board",
             "Comments and project members"
         ],
-        w_img: project8,
+        w_img: project8_img,
         w_link: "https://nova-pm.vercel.app/",
         w_github: "https://github.com/Anirban642/nova-product-management"
     },
@@ -43,7 +43,7 @@ const mywork_data = [
             "Cart and ordering",
             "Stripe payment flow"
         ],
-        w_img: project1,
+        w_img: project1_img,
         w_link: "https://food-del-frontend-19e4.onrender.com",
         w_github: "https://github.com/Anirban642/tomato-react"
     },
@@ -57,7 +57,7 @@ const mywork_data = [
             "Groq API integration",
             "Responsive chatbot UI"
         ],
-        w_img: project3,
+        w_img: project3_img,
         w_link: "https://anirban642.github.io/gemini-react/",
         w_github: "https://github.com/Anirban642/gemini-react"
     },
