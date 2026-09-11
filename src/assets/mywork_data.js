@@ -58,7 +58,7 @@ const mywork_data = [
             "Responsive chatbot UI"
         ],
         w_img: project3_img,
-        w_link: "https://anirban642.github.io/gemini-react/",
+        w_link: "https://nexa-react.vercel.app/",
         w_github: "https://github.com/Anirban642/gemini-react"
     },
 ]
